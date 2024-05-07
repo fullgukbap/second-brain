@@ -47,6 +47,7 @@ FCM에는 두 가지 메시징 방법이 존재한다.
 Firebase 프로젝트 설정에서 토큰 키 생성 가능 
 ![[Screenshot 2024-05-07 at 2.57.43 PM.png]]
 
+https://console.firebase.google.com/u/0/project/pump-9d4dd/settings/serviceaccounts/adminsdk?hl=ko
 ### 용어 정리 
 프로그래매틱 방식이란 
 코드나 프로그램을 사용하여 작업을 자동화 하거나 제어하는 방식을 의미한다. 
