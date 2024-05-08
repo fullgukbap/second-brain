@@ -1,9 +1,4 @@
 {
-	"nodes":[
-		{"id":"95616f9506a02703","type":"text","text":"App Push 알림 날리기","x":-223,"y":-143,"width":250,"height":60},
-		{"id":"1c6714b9c43a3b2d","x":-223,"y":-11,"width":250,"height":60,"type":"text","text":"FCM 이란?\n"}
-	],
-	"edges":[
-		{"id":"0fede181e2928d8d","fromNode":"95616f9506a02703","fromSide":"bottom","toNode":"1c6714b9c43a3b2d","toSide":"top"}
-	]
+	"nodes":[],
+	"edges":[]
 }
