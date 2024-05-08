@@ -2,6 +2,9 @@
 - [ ] Pump 프로젝트
 	- [x] 1. FCM 공부하기 
 		- [ ] FCM 모바일이랑 테스트 하기 
+	- [ ] Oauth 2.0 개념 정라하기
+		- [ ] Mobile에서 어떻게 Oauth 2.0을 이용해 로그인하는지 알아보기
+		- [ ] AccessToken Refresh Token 발급해보기 
 	- [ ] 2. 데이터베이스 모델 작성 
 		- [x] 현재 데이터베이스 모델링 중이였음 
 		- [ ] Hexagonal Model 작성 
