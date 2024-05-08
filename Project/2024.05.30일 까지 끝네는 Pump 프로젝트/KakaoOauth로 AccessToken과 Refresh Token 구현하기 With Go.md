@@ -87,6 +87,10 @@ Grant는 주로 권한을 부여하거나 허용하는 것을 의미한다.
 
 
 
+그 외 
+Authorization Code 방법과
+Implicit 방법이 존재한다.
+
 
 ---
 
