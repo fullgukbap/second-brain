@@ -26,10 +26,12 @@ Oauth를 사용한다라 함은 제 3사의 서비스를 이용한다를 뜻하�
 
 ![[생활코딩의 oauth 강좌중 등록 과정을 도식화.png]]
 
+카카오톡 같은 경우 ClientID는 앱 REST API 키  [내 애플리케이션] > [앱 키]에서 확인 가능하고
+client_secret은 [내 애플리케이션] > [보안]에서 보기 가능합니다.
 
+그런 다음 다음과 같은 방식으로 진행된다.
 
-
-
+![[Authorizatino Code Grant type 도식화.png]]
 
 ### Kakao Oauth 사용해보기
 그러면 한번 대한민국의 대표 메신저 앱인 kakao의 oauth를 사용해 볼까요? 
