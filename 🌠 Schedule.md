@@ -15,6 +15,7 @@
 
 - [ ] 그외
 	- [ ] Mobile Obsidian 동기화 하기 
+	- [ ] Youtube로 강의를 찍어봐라 
 
 
 
