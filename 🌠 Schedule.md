@@ -14,7 +14,7 @@
 
 - [ ] 정리하기
 	- [ ] Youtube 영상 정리하기 
-	- [ ] Figma 정리하기 
+	- [x] Figma 정리하기 
 
 - [ ] 그외
 	- [ ] Mobile Obsidian 동기화 하기 

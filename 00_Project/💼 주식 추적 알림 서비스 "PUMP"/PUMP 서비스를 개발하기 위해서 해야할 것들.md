@@ -15,10 +15,11 @@
 		- [ ] Mobile에서 어떻게 Oauth 2.0을 이용해 로그인하는지 알아보기
 		- [ ] AccessToken Refresh Token 발급해보기 
 		- [x] StatusTemporaryRedirect = 307 // RFC 9110, 15.4.8, StatusPermanentRedirect = 308 // RFC 9110, 15.4.9 두개 차이 점 분석 
-	- [ ] 2. 데이터베이스 모델 작성 
+	- [x] 2. 데이터베이스 모델 작성 
 		- [x] 현재 데이터베이스 모델링 중이였음 
-		- [ ] Hexagonal Model 작성 
+		- [x] Hexagonal Model 작성 
 	- [ ] 3. API 작성
+		- [ ] git book 살펴보기 
 	- [ ] 4. 프로젝트 아키텍처 작성 
 	- [ ] 5. 개발
 	- [ ] 6. CI / CD 구축하기
