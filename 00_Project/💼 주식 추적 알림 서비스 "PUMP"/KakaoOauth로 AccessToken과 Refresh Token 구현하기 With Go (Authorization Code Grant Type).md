@@ -32,6 +32,101 @@ client_secret은 [내 애플리케이션] > [보안]에서 보기 가능합니�
 그런 다음 다음과 같은 방식으로 진행된다.
 ![[Authorizationn Code Grant type 도식화 1.png]]
 
+그래서 다음과 같이 작성하면 된다.
+```go
+package main
+
+import (
+	"context"
+	"crypto/rand"
+	"encoding/base64"
+	"fmt"
+	"log"
+	"net/http"
+	"time"
+
+	"github.com/spf13/viper"
+	"golang.org/x/oauth2"
+)
+
+func init() {
+	viper.SetConfigFile(".env")
+	err := viper.ReadInConfig()
+	if err != nil {
+		log.Fatalf("viper로 .env 해석 중 에러 발생 : %v", err)
+	}
+}
+
+var kakaoOauthConfig *oauth2.Config
+
+func main() {
+	kakaoOauthConfig = &oauth2.Config{
+		ClientID:     viper.GetString("OAUTH_KAKAO_CLIENT_ID"),
+		ClientSecret: viper.GetString("OAUTH_KAKAO_CLIENT_SECRET"),
+		Endpoint: oauth2.Endpoint{
+			// Authrizaiton Server의 URL
+			AuthURL: "https://kauth.kakao.com/oauth/authorize",
+
+			// Resource Server의 URL
+			TokenURL: "https://kauth.kakao.com/oauth/token",
+		},
+		RedirectURL: "http://localhost:8080/auth/kakao/callback",
+	}
+
+	http.HandleFunc("/", indexHandler)
+	http.HandleFunc("/auth/kakao/login", kakaoOuathLoginHandler)
+	http.HandleFunc("/auth/kakao/callback", kakaoOauthCallbackHandler)
+	if err := http.ListenAndServe(":8080", nil); err != nil {
+		log.Fatalf("서버 Listening중 에러 발생 : %v", err)
+	}
+}
+
+func indexHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprint(w, "index handler")
+}
+
+func kakaoOuathLoginHandler(w http.ResponseWriter, r *http.Request) {
+	state := GenerateStateOauthCookie(w)
+
+	// Resource 서버에게 인가하게 해주는 url 생성
+	kakaoAuthorizationServerURL := kakaoOauthConfig.AuthCodeURL(state)
+
+	http.Redirect(w, r, kakaoAuthorizationServerURL, http.StatusTemporaryRedirect)
+}
+
+func kakaoOauthCallbackHandler(w http.ResponseWriter, r *http.Request) {
+	oauthState, _ := r.Cookie("oauthstate")
+	if r.FormValue("state") != oauthState.Value {
+		log.Printf("invalid google aouth state cookie: %s state:%s\n", oauthState.Value, r.FormValue("state"))
+		http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
+		return
+	}
+
+	token, err := kakaoOauthConfig.Exchange(context.Background(), r.FormValue("code"))
+	if err != nil {
+		log.Printf("code가 유효하지 않습니다. code: %s, err: %v", r.FormValue("code"), err)
+	}
+
+	fmt.Printf("token: %+v", token)
+
+	http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
+}
+
+func GenerateStateOauthCookie(w http.ResponseWriter) string {
+	expiration := time.Now().Add(1 * 24 * time.Hour)
+	b := make([]byte, 16)
+	rand.Read(b)
+	state := base64.URLEncoding.EncodeToString(b)
+	cookie := &http.Cookie{Name: "oauthstate", Value: state, Expires: expiration}
+	http.SetCookie(w, cookie)
+	return state
+}
+
+```
+
+
+
+
 
 ### Kakao Oauth 사용해보기
 그러면 한번 대한민국의 대표 메신저 앱인 kakao의 oauth를 사용해 볼까요? 

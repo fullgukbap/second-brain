@@ -8,6 +8,8 @@
 
 
 - [ ] Pump 프로젝트
+	- [ ] 디자인 개편하기 
+
 	- [ ] 서버 구매하기 
 	- [x] 1. FCM 공부하기 
 		- [ ] FCM 모바일이랑 테스트 하기 
@@ -18,8 +20,21 @@
 	- [x] 2. 데이터베이스 모델 작성 
 		- [x] 현재 데이터베이스 모델링 중이였음 
 		- [x] Hexagonal Model 작성 
+
+
+
 	- [ ] 3. API 작성
-		- [ ] git book 살펴보기 
+		- [ ] Repository 작성 
+			- [ ] Gorm Open 코드 작성
+			- [ ] Migration 작성 
+			- [ ] Database Logging 해보기 
+			- [ ] User, Exr, Subscribe, Notification 순으로 작성
+		- [ ] Service 작성
+			- [ ]  User Auth, Kakao Auth
+		
+
+		
+
 	- [ ] 4. 프로젝트 아키텍처 작성 
 	- [ ] 5. 개발
 	- [ ] 6. CI / CD 구축하기
