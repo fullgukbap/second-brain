@@ -22,6 +22,7 @@
 		- [x] Hexagonal Model 작성 
 
 
+     - [ ] Golang User 권환 구현하기 
 
 	- [ ] 3. API 작성
 		- [ ] Repository 작성 
