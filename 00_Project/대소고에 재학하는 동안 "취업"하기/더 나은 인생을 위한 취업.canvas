@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"f8a0af582b18ce37","type":"text","text":"\"더 나는 인생을 위한 취업\"","x":-98,"y":-14,"width":238,"height":50,"color":"4"},
+		{"id":"d39fb1dea6015f54","type":"file","file":"00_Project/대소고에 재학하는 동안 \"취업\"하기/어떻게 너는 취업을 할 건데?.md","x":-179,"y":-620,"width":400,"height":400},
+		{"id":"dc72ee1c558d9f63","x":340,"y":-14,"width":188,"height":50,"type":"text","text":"취업에 관한 내 고찰"},
+		{"id":"4edaf5898f12e8f2","type":"file","file":"00_Project/대소고에 재학하는 동안 \"취업\"하기/취업에 관한 내 고찰/너는 왜 취업을 하려고 하는데?.md","x":800,"y":-189,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"f32118d3bacb85d5","fromNode":"f8a0af582b18ce37","fromSide":"top","toNode":"d39fb1dea6015f54","toSide":"bottom"},
+		{"id":"5b334eee14fba903","fromNode":"f8a0af582b18ce37","fromSide":"right","toNode":"dc72ee1c558d9f63","toSide":"left"},
+		{"id":"70ed67014e4bdb1c","fromNode":"dc72ee1c558d9f63","fromSide":"right","toNode":"4edaf5898f12e8f2","toSide":"left"}
+	]
+}
