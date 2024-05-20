@@ -22,7 +22,7 @@
 		- [x] Hexagonal Model 작성 
 
     - [x] Golang User 권환 구현하기 
-	- [ ] 3. API 작성
+	- [x] 3. API 작성
 		- [ ] Repository 작성 
 			- [ ] Gorm Open 코드 작성
 			- [ ] Migration 작성 
