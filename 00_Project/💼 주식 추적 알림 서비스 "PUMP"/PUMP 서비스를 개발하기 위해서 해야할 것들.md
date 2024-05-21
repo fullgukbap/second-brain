@@ -23,11 +23,14 @@
 
     - [x] Golang User 권환 구현하기 
 	- [x] 3. API 작성
-	- [ ] 데이터베이스 다시 재구성
+	- [x] 데이터베이스 다시 재구성
 		- [ ] Repository 작성 
-			- [ ] Gorm Open 코드 작성
-			- [ ] Migration 작성 
+			- [x] Gorm Open 코드 작성
+			- [x] Migration 작성 
+			- [ ] Go 언어 config 파일 작성해보기 
+			- [ ] Go 언어 로깅 
 			- [ ] Database Logging 해보기 
+				- [ ] 파일에 저장하기 까지 
 			- [ ] User, Exr, Subscribe, Notification 순으로 작성
 		- [ ] Service 작성
 			- [ ]  User Auth, Kakao Auth
