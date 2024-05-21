@@ -28,9 +28,9 @@
 			- [x] Gorm Open 코드 작성
 			- [x] Migration 작성 
 			- [x] Go 언어 config 파일 작성해보기 
-				- [ ] Viper 사용하기로 함 
+				- [x] Viper 사용하기로 함 
 			- [ ] Go 언어 로깅 
-			- [ ] Database Logging 해보기 
+			- [x] Database Logging 해보기 
 				- [ ] 파일에 저장하기 까지 
 			- [ ] User, Exr, Subscribe, Notification 순으로 작성
 		- [ ] Service 작성
