@@ -58,4 +58,4 @@
 ---
 출처
 [https://brunch.co.kr/@seungyuppaik/13](https://brunch.co.kr/@seungyuppaik/13 "https://brunch.co.kr/@seungyuppaik/13")
-저희가 했던 사업을 복기할 때 위 블로그 글을 참조하면서 정리하면 어떻게 성공했는지 혹은 어떻게 실패했는지 손쉽게 파악할 수 있겠네용
+저희가 했던 사업을 복기할 때 위 블로그 글을 참조하면서 정리하면 어떻게 성공했는지 혹은 어떻게 실패했는지 손쉽게 파악할 수 ㅋ
