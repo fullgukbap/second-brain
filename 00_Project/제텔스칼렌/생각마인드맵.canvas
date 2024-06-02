@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"c8e669df7fbea0f2","type":"file","file":"04_Attach file/제텔카스텐 표지.png","x":-100,"y":-180,"width":400,"height":667},
+		{"id":"b5ef0a9bb39c1be8","type":"file","file":"00_Project/제텔스칼렌/이 책의 저자인 쇼켄 아렌스에 대해서.md","x":560,"y":-46,"width":400,"height":400},
+		{"id":"ab46f28ed3b50c32","type":"file","file":"00_Project/제텔스칼렌/나는 이 책을 읽으려고 하는가?.md","x":-100,"y":-820,"width":400,"height":400},
+		{"id":"75eb7e782e7ccbb9","x":-880,"y":-46,"width":400,"height":400,"type":"file","file":"00_Project/제텔스칼렌/-도입부- \"글을 잘 작성하기 위해선, 체계적 메모를 해야 한다\".md"}
+	],
+	"edges":[
+		{"id":"35c15f7297e5b8cb","fromNode":"c8e669df7fbea0f2","fromSide":"right","toNode":"b5ef0a9bb39c1be8","toSide":"left"},
+		{"id":"df255dc5532dcab6","fromNode":"c8e669df7fbea0f2","fromSide":"top","toNode":"ab46f28ed3b50c32","toSide":"bottom"},
+		{"id":"446045133442a39e","fromNode":"c8e669df7fbea0f2","fromSide":"left","toNode":"75eb7e782e7ccbb9","toSide":"right"}
+	]
+}
