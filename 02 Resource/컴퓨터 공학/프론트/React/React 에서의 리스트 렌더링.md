@@ -33,4 +33,4 @@ export default function ShoppingList() {
 ---
 
 [[HTML에서 Attribute란?]]
-[[js 리스트 렌더링 ]]
+[[Javascript map 메소드]]
