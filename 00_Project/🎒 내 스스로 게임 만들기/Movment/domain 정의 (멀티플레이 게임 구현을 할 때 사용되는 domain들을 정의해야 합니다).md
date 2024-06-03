@@ -1,15 +1,12 @@
 
 
 ```go
-// direction
+// movment 
 type Direction int
 
-const (
-	DirectionUp Direction = iota
-	DirectionDown
-	DirectionLeft
-	DirectionRight
-)
+type Movement struct {
+	Direction string
+}
 ```
 
 ```go
