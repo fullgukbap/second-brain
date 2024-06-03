@@ -12,8 +12,7 @@ export default function MyApp() {
 
 
 여기서 export default는 무엇을 뜻할까?
-
-
+[[Javascript ESM, ECMAScript Module]]방식에서 사용되며 export default는 객체의 이름을 임의로 설정할 수 있다고 한다.
 
 
 ---
